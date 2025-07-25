@@ -167,7 +167,7 @@ const Homepage = () => {
       description: 'Modern website for real estate company Earthaam.',
       tech: ['Next.js', 'AWS Cloudfront', 'AWS S3', 'Route 53',],
       category: 'Frontend',
-      link: 'https://earthaam.com',
+      link: 'https://earthaam.netlify.app/',
       playstore: ''
     },
     {
@@ -175,7 +175,7 @@ const Homepage = () => {
       description: 'Modern website for real estate company Daksha Infraspace & Daksh Buildcon.',
       tech: ['Next.js', 'AWS Cloudfront', 'AWS S3', 'Route 53',],
       category: 'Frontend',
-      link: 'https://dakshinfraspace.com',
+      link: 'https://dakshainfratech.netlify.app/',
       playstore: ''
     },
     {

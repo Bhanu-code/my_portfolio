@@ -323,7 +323,7 @@ const Homepage = () => {
               className="relative w-full md:w-1/2 h-64 md:h-96 rounded-xl overflow-hidden"
             >
               <img
-                src="/public/hero.png"
+                src="/hero.png"
                 alt="Bhanu Chowhan"
                 className="rounded-xl cover"
               />

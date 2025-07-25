@@ -58,7 +58,7 @@ const Homepage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const experiences = [
-     {
+    {
       company: 'Imparable Tech',
       position: 'Co Founder | Engineer',
       duration: 'June 2025 - Present',
@@ -165,7 +165,7 @@ const Homepage = () => {
     {
       title: 'Earthaam - Real Estate',
       description: 'Modern website for real estate company Earthaam.',
-      tech: ['Next.js', 'AWS Cloudfront', 'AWS S3', 'Route 53', ],
+      tech: ['Next.js', 'AWS Cloudfront', 'AWS S3', 'Route 53',],
       category: 'Frontend',
       link: 'https://earthaam.com',
       playstore: ''
@@ -173,7 +173,7 @@ const Homepage = () => {
     {
       title: 'Daksh Infraspace - Real Estate',
       description: 'Modern website for real estate company Daksha Infraspace & Daksh Buildcon.',
-      tech: ['Next.js', 'AWS Cloudfront', 'AWS S3', 'Route 53', ],
+      tech: ['Next.js', 'AWS Cloudfront', 'AWS S3', 'Route 53',],
       category: 'Frontend',
       link: 'https://dakshinfraspace.com',
       playstore: ''
@@ -185,7 +185,7 @@ const Homepage = () => {
       category: 'Full Stack',
       link: 'https://dtsfincorp.in'
     },
-   
+
   ];
 
   useEffect(() => {
@@ -236,7 +236,7 @@ const Homepage = () => {
               Bhanu Chowhan
             </motion.div>
             <div className="hidden md:flex space-x-8">
-              {['home', 'about', 'skills', 'projects', 'contact'].map((section) => (
+              {['home', 'about', 'experience', 'skills', 'projects', 'contact'].map((section) => (
                 <motion.button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -323,7 +323,7 @@ const Homepage = () => {
               className="relative w-full md:w-1/2 h-64 md:h-96 rounded-xl overflow-hidden"
             >
               <img
-                src="/profile.jpg"
+                src="/public/hero.png"
                 alt="Bhanu Chowhan"
                 className="rounded-xl cover"
               />
@@ -332,7 +332,7 @@ const Homepage = () => {
         </div>
       </motion.section>
 
-{/* About Section */}
+      {/* About Section */}
       <motion.section
         id="about"
         className="py-24 bg-white"
@@ -341,7 +341,7 @@ const Homepage = () => {
         viewport={{ once: true }}
         variants={sectionVariants}
       >
-        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
           <motion.div className="space-y-6" variants={sectionVariants}>
             <motion.span className="text-red-500 font-medium" variants={sectionVariants}>
               About Me
@@ -380,7 +380,7 @@ const Homepage = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            
+
             animate={{
               y: [0, -15, 0]
             }}

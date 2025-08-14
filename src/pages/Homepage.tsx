@@ -25,8 +25,7 @@ import Terraform from "../../public/icons8-terraform.svg";
 import Docker from "../../public/icons8-docker.svg";
 import Git from "../../public/icons8-git.svg";
 import Jest from "../../public/icons8-jest-96.png";
-
-
+// import HeroModel from '../components/Spline';
 
 
 // Animation variants
@@ -323,10 +322,11 @@ const Homepage = () => {
               className="relative w-full md:w-1/2 h-64 md:h-96 rounded-xl overflow-hidden"
             >
               <img
-                src="/hero.png"
+                src="/hero.jpg"
                 alt="Bhanu Chowhan"
-                className="rounded-xl cover"
+                className="rounded-xl mt-10 cover"
               />
+              {/* <HeroModel/> */}
             </motion.div>
           </div>
         </div>
